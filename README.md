@@ -28,7 +28,7 @@ npm start
 npm start
 ```
 
-Note that the Contacts app server must also be running to support the app's API calls.
+Note that the [Contacts app server](https://github.com/udacity/reactnd-contacts-server2) must also be running to support the app's API calls.
 
 ## Contributing
 
