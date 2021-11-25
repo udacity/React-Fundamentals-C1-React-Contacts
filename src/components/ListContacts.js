@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const ListContacts = ({ contacts, onDeleteContact }) => {
   return (
     <ol className="contact-list">
@@ -23,6 +25,11 @@ const ListContacts = ({ contacts, onDeleteContact }) => {
       ))}
     </ol>
   );
+};
+
+ListContacts.propTypes = {
+  contacts: PropTypes.array.isRequired,
+  onDeleteContact: PropTypes.func.isRequired,
 };
 
 export default ListContacts;
