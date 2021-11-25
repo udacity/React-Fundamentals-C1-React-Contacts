@@ -1,8 +1,9 @@
+import { useState } from "react";
 import "../css/App.css";
 import ListContacts from "./ListContacts";
 
 const App = () => {
-  const contacts = [
+  const [contacts, setContacts] = useState([
     {
       id: "tyler",
       name: "Tyler McGinnis",
@@ -21,7 +22,8 @@ const App = () => {
       handle: "@richardkalehoff",
       avatarURL: "http://localhost:5001/richard.jpg",
     },
-  ];
+  ]);
+
   return (
     <div>
       <ListContacts contacts={contacts} />
