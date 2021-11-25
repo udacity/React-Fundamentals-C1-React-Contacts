@@ -16,6 +16,8 @@ const App = () => {
   }, []);
 
   const removeContact = (contact) => {
+    ContactsAPI.remove(contact);
+
     setContacts(contacts.filter((c) => c.id !== contact.id));
   };
 
