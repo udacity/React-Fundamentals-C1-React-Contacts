@@ -10,25 +10,59 @@ Most of the commits in this repository correspond to videos in the program.
 
 2. Install the dependencies.
 
-```
+```bash
 npm install
 ```
 
-3a. To access the starter code, checkout the `starter` branch, then start the application.
+3. Start the development server.
 
-```
-git checkout starter
-
-npm start
+```bash
+npm run dev
 ```
 
-3b. Alternatively, to access the finished project, simply start the application.
+4. Open your browser and navigate to the development server URL (e.g., `http://localhost:5173`).
 
-```
-npm start
+5. Ensure that the [Contacts app server](https://github.com/udacity/reactnd-contacts-server2) is running to support the app's API calls.
+
+### Production Build
+
+To create a production-ready build of the project:
+
+1. Run the build command:
+   ```bash
+   npm run build
+   ```
+2. Serve the build locally to test:
+   ```bash
+   npm run preview
+   ```
+3. The app will be served at a local preview URL (e.g., `http://localhost:4173`).
+
+## Branch Information
+
+- **Starter Code**: To access the starter code, checkout the `starter` branch:
+  ```bash
+  git checkout starter
+  ```
+  Then start the application:
+  ```bash
+  npm run dev
+  ```
+
+- **Finished Project**: Simply start the application:
+  ```bash
+  npm run dev
+  ```
+
+## Environment Variables
+
+This project uses environment variables to configure the API URL. Create a `.env` file in the project root with the following content:
+
+```env
+VITE_CONTACTS_API_URL=http://localhost:5001
 ```
 
-Note that the Contacts app server must also be running to support the app's API calls.
+Update the URL as needed for your API setup.
 
 ## Contributing
 
